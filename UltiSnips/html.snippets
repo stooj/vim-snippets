@@ -182,7 +182,19 @@ endsnippet
 snippet div "XHTML <div>" w
 <div`!p snip.rv=' id="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""``!p snip.rv=' class="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""`>
 	$0
-</div>
+</div> <!-- $1 -->
+endsnippet
+
+snippet button "XHTML <button>" w
+<button type="${1:button}" class="${2:name}" data-toggle="${3:collapse}" data-target="${4:target}">
+	$0
+</button>
+endsnippet
+
+snippet span "XHTML <span>" w
+<span class="${1:name}">
+	$0
+</span>
 endsnippet
 
 snippet form "XHTML <form>" w
