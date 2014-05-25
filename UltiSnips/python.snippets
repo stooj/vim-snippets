@@ -525,6 +525,14 @@ finally:
 	${7:pass}
 endsnippet
 
+snippet py2input "Backwards compatible input" b
+# Use input() with python2
+try:
+	input = raw_input
+except NameError:
+	pass
+endsnippet
+
 
 #####################
 # Assertions & Tests #
