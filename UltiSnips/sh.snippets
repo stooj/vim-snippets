@@ -89,4 +89,8 @@ while ${2:[[ ${1:condition} ]]}; do
 done
 endsnippet
 
+snippet getcwd "Get current working directory"
+DIR="$( cd "$(dirname "$0")" && pwd)"
+endsnippet
+
 # vim:ft=snippets:
